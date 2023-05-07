@@ -26,7 +26,7 @@ export default function Home({ posts }: Props) {
       <ul>
         {posts.map((post: PostType) => (
           <Link href={`/posts/${post.id}`} key={post.id}>
-            <li style={{ borderBottom: '1px solid white', padding: '20px' }} key={post.id}>
+            <li style={{ borderBottom: '1px solid white', padding: '50px' }} key={post.id}>
               <h2>{post.title}</h2>
               <p>{post.content}</p>
               <p>{post.author}</p>
